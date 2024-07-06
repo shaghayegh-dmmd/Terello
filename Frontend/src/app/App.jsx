@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import LoginPage from '../pages/LoginPage';
 import SignupPage from "../pages/SignupPage";
 import DashboardPage from '../pages/DashboardPage';
+import AssignPage from '../pages/Assign';
 function App() {
 
 
@@ -19,6 +20,8 @@ function App() {
           <Route path="/Signup" element={<SignupPage />}>
           </Route>
           <Route path="/Dashboard" element={<DashboardPage />}>
+          </Route>
+          <Route path="/Assign" element={<AssignPage />}>
           </Route>
         </Routes>
       </BrowserRouter>

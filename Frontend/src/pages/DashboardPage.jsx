@@ -28,7 +28,7 @@ function DashboardPage() {
     return (<>
         <MainHeader />
         <div className="flex justify-center items-center w-full">
-            <div className=" flex flex-col items-start justify-center w-4/6 bg-white h-full p-5 m-4">
+            <div className=" flex flex-col items-center justify-center w-4/6 bg-white h-full p-5 m-4">
                 <div className="w-5/6 h-48 border border-silver rounded-md p-5 m-2 overflow-y-scroll">
                     <div className="flex flex-row items-center">
                         <Clockicon className="text-silverbold" />
