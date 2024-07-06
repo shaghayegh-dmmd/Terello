@@ -6,11 +6,12 @@ import Sidebar from '../Sidebar/Sidebar';
 
 function MainHeader() {
     return (
-        <div className="flex justify-end bg-white items-center w-full h-14 pr-14">
-            <div className='flex justify-between items-center w-1/6 h-10 bg-white'>
+        <div className="flex justify-end bg-white items-center w-full h-14 pr-14 pl-14 border-b border-silver">
+            <div className='flex justify-between items-center w-2/6 h-10 bg-white'>
             <Sidebar/>
+            
             </div>
-            <div className="flex justify-between items-center w-5/6 h-10 bg-white">
+            <div className="flex justify-between items-center w-4/6 h-10 bg-white">
                 <div className="flex items-center justify-center w-3/4 max-[778px]:w-full">
                     <div className="relative flex w-1/2 flex-wrap items-stretch">
                     <span

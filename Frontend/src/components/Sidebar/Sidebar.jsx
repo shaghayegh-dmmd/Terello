@@ -1,7 +1,7 @@
 import React from 'react';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, IconButton } from '@mui/material';
-import InboxIcon from '@mui/icons-material/Inbox';
-import MailIcon from '@mui/icons-material/Mail';
+import BoardIcon from '@mui/icons-material/Dashboard';
+import Template from '@mui/icons-material/Equalizer';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
@@ -16,16 +16,15 @@ const Sidebar = () => {
   };
 
   const menuItems = [
-    { text: 'Inbox', icon: <InboxIcon /> },
-    { text: 'Starred', icon: <MailIcon /> },
-    { text: 'Send email', icon: <InboxIcon /> },
-    { text: 'Drafts', icon: <MailIcon /> },
+    { text: 'Boards', icon: <BoardIcon /> },
+    { text: 'Template', icon: <Template /> },
+    
   ];
 
   return (
     <div>
       <IconButton onClick={toggleDrawer(true)}>
-        <MenuIcon />
+        <MenuIcon className=' text-primary'/>
       </IconButton>
       <Drawer anchor='left' open={open} onClose={toggleDrawer(false)}>
         <List>
