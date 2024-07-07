@@ -31,21 +31,24 @@ const Boards = () => {
     };
     return (
         <>
-            <div className="flex justify-center items-center w-full h-screen">
+            <div className="flex justify-center items-center w-full h-screen ">
                 <div className="flex flex-col justify-start items-center w-5/6 h-screen relative">
-                    <DndProvider backend={HTML5Backend}>
-                        <div className="board">
-                            {columns.map(column => (
-                                <Column
-                                    key={column.id}
-                                    name={column.name}
-                                    cards={column.cards}
-                                    columnId={column.id}
-                                    addCard={addCard}
-                                />
-                            ))}
-                        </div>
-                    </DndProvider>
+
+                    <div className=" p-10 border border-silver m-20 overflow-y-scroll rounded-md">
+                        <DndProvider backend={HTML5Backend}>
+                            <div className="board">
+                                {columns.map(column => (
+                                    <Column
+                                        key={column.id}
+                                        name={column.name}
+                                        cards={column.cards}
+                                        columnId={column.id}
+                                        addCard={addCard}
+                                    />
+                                ))}
+                            </div>
+                        </DndProvider>
+                    </div>
                     <div className='flex justify-start w-full absolute bottom-10'>
                         <Link to="/dashboard">
                             <button className='bg-primary text-white font-bold px-4 py-1 rounded-md mx-5 '>
