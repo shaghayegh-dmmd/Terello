@@ -5,6 +5,8 @@ import LoginPage from '../pages/LoginPage';
 import SignupPage from "../pages/SignupPage";
 import DashboardPage from '../pages/DashboardPage';
 import AssignPage from '../pages/Assign';
+import BoardPage from "../pages/BoardPage";
+
 function App() {
 
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/Dashboard" element={<DashboardPage />}>
           </Route>
           <Route path="/Assign" element={<AssignPage />}>
+          </Route>
+          <Route path="/Board" element={<BoardPage />}>
           </Route>
         </Routes>
       </BrowserRouter>

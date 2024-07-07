@@ -7,14 +7,18 @@ import Sidebar from '../Sidebar/Sidebar';
 function MainHeader() {
     return (
         <div className="flex justify-end bg-white items-center w-full h-14 pr-14 pl-14 border-b border-silver">
-            <div className='flex justify-between items-center w-2/6 h-10 bg-white'>
-            <Sidebar/>
-            
+            <div className='flex justify-start items-center w-2/6 h-10 bg-white'>
+                <Sidebar />
+                <Link to="/Board">
+                    <button className='bg-primary text-white font-bold px-4 py-1 rounded-md mx-3'>
+                        Create
+                    </button>
+                </Link>
             </div>
             <div className="flex justify-between items-center w-4/6 h-10 bg-white">
                 <div className="flex items-center justify-center w-3/4 max-[778px]:w-full">
                     <div className="relative flex w-1/2 flex-wrap items-stretch">
-                    <span
+                        <span
                             className="input-group-text absolute flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
                             id="basic-addon2">
                             <svg
@@ -35,7 +39,7 @@ function MainHeader() {
                             aria-label="Search"
                             aria-describedby="button-addon2" />
 
-                        
+
                     </div>
                 </div>
                 <div className="flex justify-between items-center w-40">
@@ -49,7 +53,7 @@ function MainHeader() {
                     </button>
                 </div>
             </div>
-            
+
         </div>
     );
 }
